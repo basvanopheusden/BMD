@@ -1,606 +1,526 @@
-seed:	1437768682
+seed:	1473448196
 estimate sigma_zx
-update_params
-0.00161476	sigma_z=0.0072926	sigma_x=0.0200921
+0.0016148	sigma_z=0.00729209	sigma_x=0.0200923
 estimate z
-update_params
-logpostreal	-16934.5	logpostinitial	646282
-sweep	0/40:	662138
-sweep	1/40:	662353
-sweep	2/40:	662547
-sweep	3/40:	662542
-sweep	4/40:	662623
-sweep	5/40:	662714
-sweep	6/40:	662700
-sweep	7/40:	662741
-sweep	8/40:	662725
-sweep	9/40:	662742
-sweep	10/40:	662737
-sweep	11/40:	662738
-sweep	12/40:	662735
-sweep	13/40:	662729
-sweep	14/40:	662730
-sweep	15/40:	662800
-sweep	16/40:	662804
-sweep	17/40:	662797
-sweep	18/40:	662789
-sweep	19/40:	662796
-sweep	20/40:	662794
-sweep	21/40:	662799
-sweep	22/40:	662793
-sweep	23/40:	662800
-sweep	24/40:	662802
-sweep	25/40:	662790
-sweep	26/40:	662787
-sweep	27/40:	662755
-sweep	28/40:	662791
-sweep	29/40:	662798
-sweep	30/40:	662795
-sweep	31/40:	662798
-sweep	32/40:	662789
-sweep	33/40:	662794
-sweep	34/40:	662820
-sweep	35/40:	662824
-sweep	36/40:	662821
-sweep	37/40:	662821
-sweep	38/40:	662820
-sweep	39/40:	662817
-sample	0/40:	662827
-sample	1/40:	662830
-sample	2/40:	662829
-sample	3/40:	662817
-sample	4/40:	662815
-sample	5/40:	662815
-sample	6/40:	662812
-sample	7/40:	662817
-sample	8/40:	662814
-sample	9/40:	662815
-sample	10/40:	662824
-sample	11/40:	662813
-sample	12/40:	662823
-sample	13/40:	662824
-sample	14/40:	662811
-sample	15/40:	662831
-sample	16/40:	662814
-sample	17/40:	662813
-sample	18/40:	662821
-sample	19/40:	662815
-sample	20/40:	662824
-sample	21/40:	662817
-sample	22/40:	662821
-sample	23/40:	662820
-sample	24/40:	662819
-sample	25/40:	662822
-sample	26/40:	662811
-sample	27/40:	662825
-sample	28/40:	662814
-sample	29/40:	662815
-sample	30/40:	662817
-sample	31/40:	662817
-sample	32/40:	662824
-sample	33/40:	662816
-sample	34/40:	662816
-sample	35/40:	662816
-sample	36/40:	662816
-sample	37/40:	662822
-sample	38/40:	662808
-sample	39/40:	662814
+sweep	0/40:	664629
+sweep	1/40:	664628
+sweep	2/40:	664772
+sweep	3/40:	664826
+sweep	4/40:	664821
+sweep	5/40:	664933
+sweep	6/40:	664934
+sweep	7/40:	664934
+sweep	8/40:	664940
+sweep	9/40:	664966
+sweep	10/40:	665055
+sweep	11/40:	665053
+sweep	12/40:	665052
+sweep	13/40:	665049
+sweep	14/40:	665054
+sweep	15/40:	665059
+sweep	16/40:	665052
+sweep	17/40:	665047
+sweep	18/40:	665052
+sweep	19/40:	665055
+sweep	20/40:	665052
+sweep	21/40:	665045
+sweep	22/40:	665050
+sweep	23/40:	665064
+sweep	24/40:	665056
+sweep	25/40:	665060
+sweep	26/40:	665057
+sweep	27/40:	665047
+sweep	28/40:	665049
+sweep	29/40:	665046
+sweep	30/40:	665058
+sweep	31/40:	665057
+sweep	32/40:	665053
+sweep	33/40:	665053
+sweep	34/40:	665061
+sweep	35/40:	665047
+sweep	36/40:	665046
+sweep	37/40:	665061
+sweep	38/40:	665053
+sweep	39/40:	665032
+sample	0/40:	665056
+sample	1/40:	665057
+sample	2/40:	665064
+sample	3/40:	665078
+sample	4/40:	665098
+sample	5/40:	665080
+sample	6/40:	665080
+sample	7/40:	665086
+sample	8/40:	665077
+sample	9/40:	665083
+sample	10/40:	665091
+sample	11/40:	665095
+sample	12/40:	665094
+sample	13/40:	665086
+sample	14/40:	665084
+sample	15/40:	665089
+sample	16/40:	665082
+sample	17/40:	665081
+sample	18/40:	665085
+sample	19/40:	665090
+sample	20/40:	665089
+sample	21/40:	665097
+sample	22/40:	665077
+sample	23/40:	665091
+sample	24/40:	665085
+sample	25/40:	665082
+sample	26/40:	665088
+sample	27/40:	665085
+sample	28/40:	665094
+sample	29/40:	665094
+sample	30/40:	665091
+sample	31/40:	665090
+sample	32/40:	665089
+sample	33/40:	665086
+sample	34/40:	665085
+sample	35/40:	665092
+sample	36/40:	665092
+sample	37/40:	665089
+sample	38/40:	665083
+sample	39/40:	665087
 estimate dsigma_up
-update_params
-if_chain_i
-logposterior	665700
-d1=0.149	sigma1=0.363078
+d1=1.1	sigma1=0.301995
 estimate sigma_down
-update_params
-if_chain_i
-logposterior	667827
-d0=1	sigma0=0.0630957
+d0=1	sigma0=0.0691831
 estimate sigma_zx
-update_params
-if_chain_i
-logposterior	795757
-0.00166741	sigma_z=0.0047255	sigma_x=0.0277198
+0.00166284	sigma_z=0.00487632	sigma_x=0.020389
 estimate z
-update_params
-if_chain_i
-logposterior	792164
-logpostreal	-16052	logpostinitial	792164
-sweep	0/40:	792716
-sweep	1/40:	792725
-sweep	2/40:	792722
-sweep	3/40:	792742
-sweep	4/40:	792729
-sweep	5/40:	792731
-sweep	6/40:	792734
-sweep	7/40:	792720
-sweep	8/40:	792729
-sweep	9/40:	792748
-sweep	10/40:	792733
-sweep	11/40:	792727
-sweep	12/40:	792729
-sweep	13/40:	792730
-sweep	14/40:	792736
-sweep	15/40:	792717
-sweep	16/40:	792720
-sweep	17/40:	792723
-sweep	18/40:	792731
-sweep	19/40:	792727
-sweep	20/40:	792728
-sweep	21/40:	792741
-sweep	22/40:	792718
-sweep	23/40:	792725
-sweep	24/40:	792724
-sweep	25/40:	792720
-sweep	26/40:	792719
-sweep	27/40:	792720
-sweep	28/40:	792736
-sweep	29/40:	792731
-sweep	30/40:	792731
-sweep	31/40:	792738
-sweep	32/40:	792723
-sweep	33/40:	792727
-sweep	34/40:	792742
-sweep	35/40:	792741
-sweep	36/40:	792716
-sweep	37/40:	792723
-sweep	38/40:	792734
-sweep	39/40:	792734
-sample	0/40:	792734
-sample	1/40:	792728
-sample	2/40:	792724
-sample	3/40:	792717
-sample	4/40:	792736
-sample	5/40:	792723
-sample	6/40:	792734
-sample	7/40:	792738
-sample	8/40:	792731
-sample	9/40:	792724
-sample	10/40:	792728
-sample	11/40:	792715
-sample	12/40:	792731
-sample	13/40:	792732
-sample	14/40:	792729
-sample	15/40:	792724
-sample	16/40:	792733
-sample	17/40:	792725
-sample	18/40:	792730
-sample	19/40:	792736
-sample	20/40:	792721
-sample	21/40:	792725
-sample	22/40:	792725
-sample	23/40:	792734
-sample	24/40:	792732
-sample	25/40:	792741
-sample	26/40:	792739
-sample	27/40:	792730
-sample	28/40:	792741
-sample	29/40:	792725
-sample	30/40:	792731
-sample	31/40:	792730
-sample	32/40:	792740
-sample	33/40:	792723
-sample	34/40:	792724
-sample	35/40:	792730
-sample	36/40:	792733
-sample	37/40:	792740
-sample	38/40:	792743
-sample	39/40:	792729
+sweep	0/40:	784313
+sweep	1/40:	784350
+sweep	2/40:	784348
+sweep	3/40:	784348
+sweep	4/40:	784351
+sweep	5/40:	784356
+sweep	6/40:	784347
+sweep	7/40:	784349
+sweep	8/40:	784343
+sweep	9/40:	784350
+sweep	10/40:	784356
+sweep	11/40:	784344
+sweep	12/40:	784345
+sweep	13/40:	784340
+sweep	14/40:	784358
+sweep	15/40:	784336
+sweep	16/40:	784325
+sweep	17/40:	784345
+sweep	18/40:	784344
+sweep	19/40:	784357
+sweep	20/40:	784352
+sweep	21/40:	784344
+sweep	22/40:	784349
+sweep	23/40:	784353
+sweep	24/40:	784341
+sweep	25/40:	784349
+sweep	26/40:	784348
+sweep	27/40:	784356
+sweep	28/40:	784343
+sweep	29/40:	784350
+sweep	30/40:	784356
+sweep	31/40:	784359
+sweep	32/40:	784348
+sweep	33/40:	784356
+sweep	34/40:	784359
+sweep	35/40:	784350
+sweep	36/40:	784350
+sweep	37/40:	784355
+sweep	38/40:	784358
+sweep	39/40:	784357
+sample	0/40:	784349
+sample	1/40:	784351
+sample	2/40:	784356
+sample	3/40:	784342
+sample	4/40:	784352
+sample	5/40:	784354
+sample	6/40:	784348
+sample	7/40:	784356
+sample	8/40:	784349
+sample	9/40:	784357
+sample	10/40:	784351
+sample	11/40:	784352
+sample	12/40:	784347
+sample	13/40:	784357
+sample	14/40:	784355
+sample	15/40:	784351
+sample	16/40:	784362
+sample	17/40:	784357
+sample	18/40:	784346
+sample	19/40:	784352
+sample	20/40:	784356
+sample	21/40:	784360
+sample	22/40:	784350
+sample	23/40:	784349
+sample	24/40:	784364
+sample	25/40:	784364
+sample	26/40:	784354
+sample	27/40:	784348
+sample	28/40:	784361
+sample	29/40:	784354
+sample	30/40:	784349
+sample	31/40:	784358
+sample	32/40:	784358
+sample	33/40:	784355
+sample	34/40:	784359
+sample	35/40:	784353
+sample	36/40:	784356
+sample	37/40:	784345
+sample	38/40:	784361
+sample	39/40:	784347
 estimate dsigma_up
-update_params
-if_chain_i
-logposterior	792729
-d1=0.149	sigma1=0.331131
+d1=1.1	sigma1=0.251189
 estimate sigma_down
-update_params
-if_chain_i
-logposterior	792741
-d0=1	sigma0=0.0398107
+d0=1	sigma0=0.057544
 estimate sigma_zx
-update_params
-if_chain_i
-logposterior	421054
--0.00409976	sigma_z=0.0273098	sigma_x=0.0272955
+0.00167514	sigma_z=0.0292643	sigma_x=0.00158114
 estimate z
-update_params
-if_chain_i
-logposterior	415327
-logpostreal	-8977.04	logpostinitial	415327
-sweep	0/40:	415641
-sweep	1/40:	415648
-sweep	2/40:	415684
-sweep	3/40:	415690
-sweep	4/40:	415698
-sweep	5/40:	415686
-sweep	6/40:	415714
-sweep	7/40:	415717
-sweep	8/40:	415709
-sweep	9/40:	415690
-sweep	10/40:	415702
-sweep	11/40:	415701
-sweep	12/40:	415713
-sweep	13/40:	415719
-sweep	14/40:	415724
-sweep	15/40:	415730
-sweep	16/40:	415724
-sweep	17/40:	415716
-sweep	18/40:	415714
-sweep	19/40:	415729
-sweep	20/40:	415727
-sweep	21/40:	415729
-sweep	22/40:	415723
-sweep	23/40:	415726
-sweep	24/40:	415728
-sweep	25/40:	415722
-sweep	26/40:	415727
-sweep	27/40:	415727
-sweep	28/40:	415733
-sweep	29/40:	415733
-sweep	30/40:	415746
-sweep	31/40:	415744
-sweep	32/40:	415751
-sweep	33/40:	415756
-sweep	34/40:	415756
-sweep	35/40:	415749
-sweep	36/40:	415751
-sweep	37/40:	415753
-sweep	38/40:	415760
-sweep	39/40:	415752
-sample	0/40:	415763
-sample	1/40:	415765
-sample	2/40:	415771
-sample	3/40:	415772
-sample	4/40:	415771
-sample	5/40:	415764
-sample	6/40:	415775
-sample	7/40:	415768
-sample	8/40:	415772
-sample	9/40:	415770
-sample	10/40:	415768
-sample	11/40:	415775
-sample	12/40:	415769
-sample	13/40:	415767
-sample	14/40:	415768
-sample	15/40:	415771
-sample	16/40:	415774
-sample	17/40:	415769
-sample	18/40:	415775
-sample	19/40:	415769
-sample	20/40:	415776
-sample	21/40:	415773
-sample	22/40:	415769
-sample	23/40:	415767
-sample	24/40:	415774
-sample	25/40:	415773
-sample	26/40:	415767
-sample	27/40:	415770
-sample	28/40:	415775
-sample	29/40:	415773
-sample	30/40:	415774
-sample	31/40:	415767
-sample	32/40:	415770
-sample	33/40:	415763
-sample	34/40:	415775
-sample	35/40:	415769
-sample	36/40:	415772
-sample	37/40:	415771
-sample	38/40:	415766
-sample	39/40:	415773
+sweep	0/40:	327738
+sweep	1/40:	327770
+sweep	2/40:	327794
+sweep	3/40:	327814
+sweep	4/40:	327842
+sweep	5/40:	327831
+sweep	6/40:	327851
+sweep	7/40:	327843
+sweep	8/40:	327850
+sweep	9/40:	327862
+sweep	10/40:	327863
+sweep	11/40:	327868
+sweep	12/40:	327862
+sweep	13/40:	327859
+sweep	14/40:	327860
+sweep	15/40:	327847
+sweep	16/40:	327854
+sweep	17/40:	327858
+sweep	18/40:	327863
+sweep	19/40:	327867
+sweep	20/40:	327861
+sweep	21/40:	327859
+sweep	22/40:	327864
+sweep	23/40:	327858
+sweep	24/40:	327870
+sweep	25/40:	327867
+sweep	26/40:	327863
+sweep	27/40:	327856
+sweep	28/40:	327872
+sweep	29/40:	327866
+sweep	30/40:	327865
+sweep	31/40:	327871
+sweep	32/40:	327866
+sweep	33/40:	327868
+sweep	34/40:	327869
+sweep	35/40:	327866
+sweep	36/40:	327870
+sweep	37/40:	327869
+sweep	38/40:	327867
+sweep	39/40:	327870
+sample	0/40:	327877
+sample	1/40:	327872
+sample	2/40:	327872
+sample	3/40:	327874
+sample	4/40:	327878
+sample	5/40:	327872
+sample	6/40:	327872
+sample	7/40:	327879
+sample	8/40:	327890
+sample	9/40:	327894
+sample	10/40:	327889
+sample	11/40:	327891
+sample	12/40:	327893
+sample	13/40:	327888
+sample	14/40:	327888
+sample	15/40:	327888
+sample	16/40:	327881
+sample	17/40:	327887
+sample	18/40:	327881
+sample	19/40:	327893
+sample	20/40:	327888
+sample	21/40:	327881
+sample	22/40:	327890
+sample	23/40:	327890
+sample	24/40:	327873
+sample	25/40:	327876
+sample	26/40:	327879
+sample	27/40:	327877
+sample	28/40:	327889
+sample	29/40:	327888
+sample	30/40:	327885
+sample	31/40:	327885
+sample	32/40:	327891
+sample	33/40:	327885
+sample	34/40:	327890
+sample	35/40:	327882
+sample	36/40:	327894
+sample	37/40:	327887
+sample	38/40:	327883
+sample	39/40:	327887
 estimate dsigma_up
-update_params
-if_chain_i
-logposterior	415790
-d1=0.149	sigma1=0.691831
+d1=1.1	sigma1=0.691831
 estimate sigma_down
-update_params
-if_chain_i
-logposterior	415844
-d0=1	sigma0=0.120226
-estimate sigma_zx
-update_params
-if_chain_i
-logposterior	484160
-0.0037977	sigma_z=0.0171831	sigma_x=0.0340358
-estimate z
-update_params
-if_chain_i
-logposterior	497474
-logpostreal	-5251.3	logpostinitial	497474
-sweep	0/40:	497623
-sweep	1/40:	497624
-sweep	2/40:	497636
-sweep	3/40:	497640
-sweep	4/40:	497637
-sweep	5/40:	497640
-sweep	6/40:	497638
-sweep	7/40:	497637
-sweep	8/40:	497634
-sweep	9/40:	497639
-sweep	10/40:	497639
-sweep	11/40:	497634
-sweep	12/40:	497636
-sweep	13/40:	497636
-sweep	14/40:	497634
-sweep	15/40:	497640
-sweep	16/40:	497638
-sweep	17/40:	497639
-sweep	18/40:	497631
-sweep	19/40:	497629
-sweep	20/40:	497629
-sweep	21/40:	497636
-sweep	22/40:	497626
-sweep	23/40:	497637
-sweep	24/40:	497640
-sweep	25/40:	497635
-sweep	26/40:	497632
-sweep	27/40:	497633
-sweep	28/40:	497635
-sweep	29/40:	497642
-sweep	30/40:	497635
-sweep	31/40:	497631
-sweep	32/40:	497625
-sweep	33/40:	497633
-sweep	34/40:	497637
-sweep	35/40:	497637
-sweep	36/40:	497633
-sweep	37/40:	497634
-sweep	38/40:	497637
-sweep	39/40:	497635
-sample	0/40:	497640
-sample	1/40:	497638
-sample	2/40:	497635
-sample	3/40:	497639
-sample	4/40:	497631
-sample	5/40:	497635
-sample	6/40:	497636
-sample	7/40:	497638
-sample	8/40:	497634
-sample	9/40:	497636
-sample	10/40:	497639
-sample	11/40:	497640
-sample	12/40:	497639
-sample	13/40:	497635
-sample	14/40:	497636
-sample	15/40:	497635
-sample	16/40:	497631
-sample	17/40:	497634
-sample	18/40:	497633
-sample	19/40:	497635
-sample	20/40:	497638
-sample	21/40:	497636
-sample	22/40:	497631
-sample	23/40:	497636
-sample	24/40:	497633
-sample	25/40:	497638
-sample	26/40:	497632
-sample	27/40:	497637
-sample	28/40:	497636
-sample	29/40:	497641
-sample	30/40:	497629
-sample	31/40:	497634
-sample	32/40:	497624
-sample	33/40:	497638
-sample	34/40:	497642
-sample	35/40:	497635
-sample	36/40:	497635
-sample	37/40:	497639
-sample	38/40:	497638
-sample	39/40:	497629
-estimate dsigma_up
-update_params
-if_chain_i
-logposterior	497629
-d1=0.149	sigma1=0.630957
-estimate sigma_down
-update_params
-if_chain_i
-logposterior	497629
-d0=1	sigma0=0.120226
-estimate sigma_zx
-update_params
-if_chain_i
-logposterior	450413
--0.00429809	sigma_z=0.02282	sigma_x=0.027502
-estimate z
-update_params
-if_chain_i
-logposterior	446466
-logpostreal	-8405.3	logpostinitial	446466
-sweep	0/40:	446497
-sweep	1/40:	446482
-sweep	2/40:	446493
-sweep	3/40:	446496
-sweep	4/40:	446494
-sweep	5/40:	446490
-sweep	6/40:	446497
-sweep	7/40:	446495
-sweep	8/40:	446498
-sweep	9/40:	446491
-sweep	10/40:	446492
-sweep	11/40:	446496
-sweep	12/40:	446496
-sweep	13/40:	446486
-sweep	14/40:	446490
-sweep	15/40:	446487
-sweep	16/40:	446490
-sweep	17/40:	446488
-sweep	18/40:	446492
-sweep	19/40:	446496
-sweep	20/40:	446500
-sweep	21/40:	446492
-sweep	22/40:	446495
-sweep	23/40:	446497
-sweep	24/40:	446491
-sweep	25/40:	446492
-sweep	26/40:	446488
-sweep	27/40:	446496
-sweep	28/40:	446494
-sweep	29/40:	446487
-sweep	30/40:	446497
-sweep	31/40:	446491
-sweep	32/40:	446489
-sweep	33/40:	446496
-sweep	34/40:	446491
-sweep	35/40:	446492
-sweep	36/40:	446498
-sweep	37/40:	446495
-sweep	38/40:	446494
-sweep	39/40:	446496
-sample	0/40:	446493
-sample	1/40:	446496
-sample	2/40:	446495
-sample	3/40:	446494
-sample	4/40:	446491
-sample	5/40:	446494
-sample	6/40:	446489
-sample	7/40:	446491
-sample	8/40:	446485
-sample	9/40:	446492
-sample	10/40:	446495
-sample	11/40:	446495
-sample	12/40:	446500
-sample	13/40:	446496
-sample	14/40:	446490
-sample	15/40:	446489
-sample	16/40:	446492
-sample	17/40:	446497
-sample	18/40:	446494
-sample	19/40:	446492
-sample	20/40:	446484
-sample	21/40:	446494
-sample	22/40:	446496
-sample	23/40:	446493
-sample	24/40:	446491
-sample	25/40:	446493
-sample	26/40:	446497
-sample	27/40:	446492
-sample	28/40:	446490
-sample	29/40:	446484
-sample	30/40:	446493
-sample	31/40:	446495
-sample	32/40:	446472
-sample	33/40:	446498
-sample	34/40:	446493
-sample	35/40:	446496
-sample	36/40:	446485
-sample	37/40:	446489
-sample	38/40:	446498
-sample	39/40:	446497
-estimate dsigma_up
-update_params
-if_chain_i
-logposterior	446497
-d1=0.149	sigma1=0.758578
-estimate sigma_down
-update_params
-if_chain_i
-logposterior	446498
 d0=1	sigma0=0.144544
 estimate sigma_zx
-update_params
-if_chain_i
-logposterior	425554
-0.00302256	sigma_z=0.0260991	sigma_x=0.0274886
+0.00160679	sigma_z=0.00731412	sigma_x=0.0201374
 estimate z
-update_params
-if_chain_i
-logposterior	423630
-logpostreal	-8727.18	logpostinitial	423630
-sweep	0/40:	423624
-sweep	1/40:	423627
-sweep	2/40:	423628
-sweep	3/40:	423624
-sweep	4/40:	423625
-sweep	5/40:	423622
-sweep	6/40:	423629
-sweep	7/40:	423630
-sweep	8/40:	423627
-sweep	9/40:	423631
-sweep	10/40:	423628
-sweep	11/40:	423630
-sweep	12/40:	423631
-sweep	13/40:	423627
-sweep	14/40:	423628
-sweep	15/40:	423631
-sweep	16/40:	423624
-sweep	17/40:	423632
-sweep	18/40:	423625
-sweep	19/40:	423627
-sweep	20/40:	423633
-sweep	21/40:	423626
-sweep	22/40:	423633
-sweep	23/40:	423626
-sweep	24/40:	423624
-sweep	25/40:	423626
-sweep	26/40:	423626
-sweep	27/40:	423621
-sweep	28/40:	423629
-sweep	29/40:	423628
-sweep	30/40:	423622
-sweep	31/40:	423618
-sweep	32/40:	423632
-sweep	33/40:	423627
-sweep	34/40:	423625
-sweep	35/40:	423621
-sweep	36/40:	423625
-sweep	37/40:	423622
-sweep	38/40:	423624
-sweep	39/40:	423629
-sample	0/40:	423629
-sample	1/40:	423633
-sample	2/40:	423630
-sample	3/40:	423629
-sample	4/40:	423625
-sample	5/40:	423630
-sample	6/40:	423624
-sample	7/40:	423625
-sample	8/40:	423630
-sample	9/40:	423631
-sample	10/40:	423627
-sample	11/40:	423625
-sample	12/40:	423629
-sample	13/40:	423625
-sample	14/40:	423620
-sample	15/40:	423629
-sample	16/40:	423621
-sample	17/40:	423625
-sample	18/40:	423629
-sample	19/40:	423624
-sample	20/40:	423629
-sample	21/40:	423627
-sample	22/40:	423631
-sample	23/40:	423624
-sample	24/40:	423628
-sample	25/40:	423622
-sample	26/40:	423629
-sample	27/40:	423624
-sample	28/40:	423625
-sample	29/40:	423617
-sample	30/40:	423621
-sample	31/40:	423627
-sample	32/40:	423631
-sample	33/40:	423631
-sample	34/40:	423627
-sample	35/40:	423621
-sample	36/40:	423629
-sample	37/40:	423629
-sample	38/40:	423628
-sample	39/40:	423624
+sweep	0/40:	666071
+sweep	1/40:	666073
+sweep	2/40:	666066
+sweep	3/40:	666190
+sweep	4/40:	666192
+sweep	5/40:	666178
+sweep	6/40:	666195
+sweep	7/40:	666179
+sweep	8/40:	666194
+sweep	9/40:	666191
+sweep	10/40:	666195
+sweep	11/40:	666190
+sweep	12/40:	666327
+sweep	13/40:	666326
+sweep	14/40:	666326
+sweep	15/40:	666334
+sweep	16/40:	666333
+sweep	17/40:	666328
+sweep	18/40:	666337
+sweep	19/40:	666336
+sweep	20/40:	666327
+sweep	21/40:	666331
+sweep	22/40:	666326
+sweep	23/40:	666388
+sweep	24/40:	666385
+sweep	25/40:	666385
+sweep	26/40:	666386
+sweep	27/40:	666394
+sweep	28/40:	666386
+sweep	29/40:	666382
+sweep	30/40:	666384
+sweep	31/40:	666384
+sweep	32/40:	666386
+sweep	33/40:	666388
+sweep	34/40:	666418
+sweep	35/40:	666420
+sweep	36/40:	666423
+sweep	37/40:	666421
+sweep	38/40:	666424
+sweep	39/40:	666416
+sample	0/40:	666424
+sample	1/40:	666421
+sample	2/40:	666421
+sample	3/40:	666425
+sample	4/40:	666420
+sample	5/40:	666416
+sample	6/40:	666416
+sample	7/40:	666424
+sample	8/40:	666421
+sample	9/40:	666499
+sample	10/40:	666501
+sample	11/40:	666504
+sample	12/40:	666501
+sample	13/40:	666504
+sample	14/40:	666505
+sample	15/40:	666493
+sample	16/40:	666503
+sample	17/40:	666502
+sample	18/40:	666505
+sample	19/40:	666498
+sample	20/40:	666497
+sample	21/40:	666499
+sample	22/40:	666502
+sample	23/40:	666498
+sample	24/40:	666497
+sample	25/40:	666495
+sample	26/40:	666503
+sample	27/40:	666504
+sample	28/40:	666500
+sample	29/40:	666493
+sample	30/40:	666500
+sample	31/40:	666494
+sample	32/40:	666504
+sample	33/40:	666507
+sample	34/40:	666499
+sample	35/40:	666593
+sample	36/40:	666598
+sample	37/40:	666588
+sample	38/40:	666595
+sample	39/40:	666596
 estimate dsigma_up
-update_params
-if_chain_i
-logposterior	423624
-d1=0.149	sigma1=0.758578
+d1=1.1	sigma1=0.363078
 estimate sigma_down
-update_params
-if_chain_i
-logposterior	423624
-d0=1	sigma0=0.144544
+d0=1	sigma0=0.0912011
 estimate sigma_zx
-update_params
-if_chain_i
-logposterior	456555
-0.00380362	sigma_z=0.0209889	sigma_x=0.0329598
+0.00658562	sigma_z=0.0296389	sigma_x=0.00158114
 estimate z
-update_params
-if_chain_i
-logposterior	462872
+sweep	0/40:	327870
+sweep	1/40:	327895
+sweep	2/40:	327883
+sweep	3/40:	327893
+sweep	4/40:	327913
+sweep	5/40:	327905
+sweep	6/40:	327905
+sweep	7/40:	327904
+sweep	8/40:	327907
+sweep	9/40:	327932
+sweep	10/40:	327940
+sweep	11/40:	327941
+sweep	12/40:	327933
+sweep	13/40:	327938
+sweep	14/40:	327934
+sweep	15/40:	327933
+sweep	16/40:	327932
+sweep	17/40:	327928
+sweep	18/40:	327937
+sweep	19/40:	327932
+sweep	20/40:	327929
+sweep	21/40:	327927
+sweep	22/40:	327933
+sweep	23/40:	327927
+sweep	24/40:	327938
+sweep	25/40:	327938
+sweep	26/40:	327938
+sweep	27/40:	327933
+sweep	28/40:	327932
+sweep	29/40:	327935
+sweep	30/40:	327940
+sweep	31/40:	327931
+sweep	32/40:	327936
+sweep	33/40:	327928
+sweep	34/40:	327932
+sweep	35/40:	327939
+sweep	36/40:	327935
+sweep	37/40:	327929
+sweep	38/40:	327929
+sweep	39/40:	327936
+sample	0/40:	327934
+sample	1/40:	327940
+sample	2/40:	327949
+sample	3/40:	327949
+sample	4/40:	327944
+sample	5/40:	327953
+sample	6/40:	327945
+sample	7/40:	327947
+sample	8/40:	327948
+sample	9/40:	327948
+sample	10/40:	327947
+sample	11/40:	327943
+sample	12/40:	327943
+sample	13/40:	327940
+sample	14/40:	327956
+sample	15/40:	327947
+sample	16/40:	327942
+sample	17/40:	327947
+sample	18/40:	327946
+sample	19/40:	327941
+sample	20/40:	327949
+sample	21/40:	327942
+sample	22/40:	327949
+sample	23/40:	327941
+sample	24/40:	327946
+sample	25/40:	327948
+sample	26/40:	327949
+sample	27/40:	327945
+sample	28/40:	327949
+sample	29/40:	327952
+sample	30/40:	327950
+sample	31/40:	327945
+sample	32/40:	327947
+sample	33/40:	327943
+sample	34/40:	327946
+sample	35/40:	327952
+sample	36/40:	327941
+sample	37/40:	327937
+sample	38/40:	327947
+sample	39/40:	327944
+estimate dsigma_up
+d1=1.1	sigma1=0.691831
+estimate sigma_down
+d0=1	sigma0=0.120226
+estimate sigma_zx
+0.00290777	sigma_z=0.0109443	sigma_x=0.0274663
+estimate z
+sweep	0/40:	579793
+sweep	1/40:	579794
+sweep	2/40:	579791
+sweep	3/40:	579790
+sweep	4/40:	579778
+sweep	5/40:	579792
+sweep	6/40:	579798
+sweep	7/40:	579794
+sweep	8/40:	579799
+sweep	9/40:	579799
+sweep	10/40:	579804
+sweep	11/40:	579801
+sweep	12/40:	579805
+sweep	13/40:	579812
+sweep	14/40:	579803
+sweep	15/40:	579805
+sweep	16/40:	579808
+sweep	17/40:	579804
+sweep	18/40:	579797
+sweep	19/40:	579794
+sweep	20/40:	579804
+sweep	21/40:	579804
+sweep	22/40:	579808
+sweep	23/40:	579805
+sweep	24/40:	579802
+sweep	25/40:	579803
+sweep	26/40:	579808
+sweep	27/40:	579805
+sweep	28/40:	579808
+sweep	29/40:	579808
+sweep	30/40:	579807
+sweep	31/40:	579802
+sweep	32/40:	579804
+sweep	33/40:	579806
+sweep	34/40:	579807
+sweep	35/40:	579803
+sweep	36/40:	579802
+sweep	37/40:	579797
+sweep	38/40:	579803
+sweep	39/40:	579807
+sample	0/40:	579804
+sample	1/40:	579804
+sample	2/40:	579805
+sample	3/40:	579803
+sample	4/40:	579806
+sample	5/40:	579806
+sample	6/40:	579803
+sample	7/40:	579801
+sample	8/40:	579803
+sample	9/40:	579804
+sample	10/40:	579806
+sample	11/40:	579804
+sample	12/40:	579806
+sample	13/40:	579807
+sample	14/40:	579804
+sample	15/40:	579803
+sample	16/40:	579797
+sample	17/40:	579806
+sample	18/40:	579801
+sample	19/40:	579802
+sample	20/40:	579803
+sample	21/40:	579804
+sample	22/40:	579803
+sample	23/40:	579799
+sample	24/40:	579803
+sample	25/40:	579795
+sample	26/40:	579786
+sample	27/40:	579794
+sample	28/40:	579803
+sample	29/40:	579804
+sample	30/40:	579796
+sample	31/40:	579793
+sample	32/40:	579798
+sample	33/40:	579810
+sample	34/40:	579799
+sample	35/40:	579802
+sample	36/40:	579797
+sample	37/40:	579805
+sample	38/40:	579798
+sample	39/40:	579807
+estimate dsigma_up
+d1=1.1	sigma1=0.436516
+estimate sigma_down
+d0=1	sigma0=0.1
+estimate sigma_zx
+-0.00443258	sigma_z=0.0209522	sigma_x=0.0275878
+estimate z
