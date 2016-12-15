@@ -1,4 +1,6 @@
-# Installation
+
+# Bayesian microsaccade detection
+## Installation
 
 * To run this, you will have to make sure you have a C compiler installed on your computer. If not, install it.
 
@@ -12,7 +14,7 @@ Install [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/wi
 * Compile the `bmd.cpp` code into the `bmd` executable in the Command Prompt.
   * `g++  -std=c++11 -O3 -I$BOOST_INC  -fexpensive-optimizations -Wall -Wextra -o bmd bmd.cpp`
  
-# Script usage
+## Script usage
 * Preprocess raw eye trace `x1.mat` with `preprocess_data.m` to match the isotropy assumption in our generative model (see paper). This writes the output to `x1.txt`.
 
 * Run BMD inference algorithm.
@@ -22,7 +24,7 @@ Install [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/wi
 
     * Run the Matlab script `BMD_results_analysis_and_visualization.m`, which reads in the change points from the `changepoints.txt` file, converts them to the eye state time series C with the helper function `tau_to_C.m` and averages across these C samples to give the probability of the eye being in a microsaccade state across the whole eye position time series `x1.txt`. This can be visualized in `microsaccades_inferred_BMD.pdf`. 
 
-# Output files
+## Output files
 
 * `changepoints.txt`
   * `N` total number of 1’s 
@@ -42,7 +44,7 @@ The user might need `params.txt` when running the BMD algorithm on simulated dat
 
 * `output.txt`: logposterior values across iterations and estimated parameter values.
 
-#  BMD variants and additional scripts 
+##  BMD variants and additional scripts 
 
 * BMD with parallel tempering: `BMD_pt.cpp` with `BMD_pt.h`
 * BMD reduced plus threshold: function `bmd_reduced_thresh.m`. To visualize the output, set the appropriate flags in the `BMD_results_analysis_and_visualization.m` script
