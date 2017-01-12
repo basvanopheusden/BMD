@@ -1,5 +1,6 @@
 
 # Bayesian microsaccade detection
+#### Implementation of the algorithm described in [Mihali, van Opheusden, and Ma, 2017, Journal of Vision](http://jov.arvojournals.org/article.aspx?articleid=2597868)
 ## Installation
 
 * To run this, you will have to make sure you have a C compiler installed on your computer. If not, install it.
