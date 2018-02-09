@@ -18,7 +18,7 @@ Install [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/wi
 ## Script usage
 * Preprocess raw eye traces `xi.mat` with `preprocess_data.m` to match the isotropy assumption in our generative model (see paper). This writes the output to `xi.txt`.
 
-* Run BMD inference algorithm, either on the command line or on batch with ./run_BMD_all.sh
+* Run BMD inference algorithm, either on the command line or on batch with `./run_BMD_all.sh`
   * `./bmd x1.txt integral_table.txt params1.txt changepoints1.txt >output1.txt`
 
 * Analyze and plot the output. 
