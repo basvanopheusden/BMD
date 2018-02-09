@@ -48,5 +48,6 @@ The user might need `params.txt` when running the BMD algorithm on simulated dat
 ##  BMD variants and additional scripts 
 
 * BMD with parallel tempering: `BMD_pt.cpp` with `BMD_pt.h`
+* `./bmd_pt x1.txt integral_table.txt params.txt changepoints.txt paral_temp.txt chain_swaps.txt >output.txt`
 * BMD reduced plus threshold: function `bmd_reduced_thresh.m`. To visualize the output, set the appropriate flags in the `BMD_results_analysis_and_visualization.m` script
 * simulated data generation script according to our generative model with several values of motor and measurement noise: `sim_data_create.m` and `sim_data_write.m`
