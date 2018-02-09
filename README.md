@@ -18,7 +18,7 @@ Install [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/wi
 ## Script usage
 * Preprocess raw eye traces `xi.mat` with `preprocess_data.m` to match the isotropy assumption in our generative model (see paper). This writes the output to `xi.txt`.
 
-* Run BMD inference algorithm, either on the command line or by running run_BMD_all.sh
+* Run BMD inference algorithm, either on the command line or on batch with ./run_BMD_all.sh
   * `./bmd x1.txt integral_table.txt params1.txt changepoints1.txt >output1.txt`
 
 * Analyze and plot the output. 
@@ -48,6 +48,6 @@ The user might need `params.txt` when running the BMD algorithm on simulated dat
 ##  BMD variants and additional scripts 
 
 * BMD with parallel tempering: `BMD_pt.cpp` with `BMD_pt.h`
-* `./bmd_pt x1.txt integral_table.txt params.txt changepoints.txt paral_temp.txt chain_swaps.txt >output.txt`
-* BMD reduced plus threshold: function `bmd_reduced_thresh.m`. To visualize the output, set the appropriate flags in the `BMD_results_analysis_and_visualization.m` script
+* `./bmd_pt x1.txt integral_table.txt params_pt1.txt changepoints_pt1.txt paral_temp_pt1.txt chain_swaps_pt1.txt >output_pt1.txt`
+* BMD reduced plus threshold: function `bmd_reduced_thresh.m`. To visualize the output, set the appropriate flags in the `BMD_vis.m` script
 * simulated data generation script according to our generative model with several values of motor and measurement noise: `sim_data_create.m` and `sim_data_write.m`
