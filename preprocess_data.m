@@ -2,7 +2,8 @@
 %vertical noise being equal
 clear all; close all;
 
-load('x1.mat')
+for i = 1:5
+load(['x',num2str(i),'.mat'])
 
 %estimate the noise level with the median absolute deviation of the
 %acceleration (see manuscript)
@@ -18,7 +19,7 @@ x2(:,2)=sigmax_x/sigmax_y*x(:,2);
 
 
 %write to file x1.txt
-fid_int_table=fopen('x1.txt', 'w');
+fid_int_table=fopen(['x',num2str(i),'.txt'], 'w');
 fprintf(fid_int_table,'%i\n', length(x2));
 for j=1:length(x2)
     if ~isnan(x2(j,1)) && ~isnan(x2(j,2))
@@ -26,6 +27,7 @@ for j=1:length(x2)
     end
 end
 fclose(fid_int_table);
+end
 
 
 
