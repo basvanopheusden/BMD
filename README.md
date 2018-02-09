@@ -16,14 +16,14 @@ Install [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/wi
   * `g++  -std=c++11 -O3 -I$BOOST_INC  -fexpensive-optimizations -Wall -Wextra -o bmd bmd.cpp`
  
 ## Script usage
-* Preprocess raw eye trace `x1.mat` with `preprocess_data.m` to match the isotropy assumption in our generative model (see paper). This writes the output to `x1.txt`.
+* Preprocess raw eye traces `xi.mat` with `preprocess_data.m` to match the isotropy assumption in our generative model (see paper). This writes the output to `xi.txt`.
 
-* Run BMD inference algorithm.
-  * `./bmd x1.txt integral_table.txt params.txt changepoints.txt >output.txt`
+* Run BMD inference algorithm, either on the command line or by running run_BMD_all.sh
+  * `./bmd x1.txt integral_table.txt params1.txt changepoints1.txt >output1.txt`
 
 * Analyze and plot the output. 
 
-    * Run the Matlab script `BMD_results_analysis_and_visualization.m`, which reads in the change points from the `changepoints.txt` file, converts them to the eye state time series C with the helper function `tau_to_C.m` and averages across these C samples to give the probability of the eye being in a microsaccade state across the whole eye position time series `x1.txt`. This can be visualized in `microsaccades_inferred_BMD.pdf`. 
+    * Run the Matlab script `BMD_vis.m`, which reads in the change points from the `changepointsi.txt` file, converts them to the eye state time series C with the helper function `tau_to_C.m` and averages across these C samples to give the probability of the eye being in a microsaccade state across the whole eye position time series `xi.txt`. This can be visualized in `microsaccades_inferred_BMDi.pdf`. 
 
 ## Output files
 
