@@ -10,16 +10,17 @@ printt=1;
 
 
 %load x file: eye position time series
+i = 1;
 x=[];
-x=dlmread('x1.txt');
+x=dlmread(['x',num2str(i),'.txt']);
 x=x(2:end, :);
 T=size(x,1);
 
 if BMD_vis
-    psname='microsaccades_inferred_BMD.pdf';
+    psname=['microsaccades_inferred_BMD',num2str(i),'.pdf'];
     
     %load output of BMD algorithm: changepoints
-    fid=fopen('changepoints.txt', 'r');
+    fid=fopen(['changepoints',num2str(i),'.txt'], 'r');
     
     i=0;
     n=[];
@@ -62,7 +63,7 @@ if BMD_vis
     Cinf=(double(Cinf))';
     
 elseif BMD_red_thresh_vis
-    psname='microsaccades_inferred_BMD_reduced_plus_threshold.pdf';
+    psname=['microsaccades_inferred_BMD_reduced_plus_threshold',num2str(i),'.pdf'];
     % load output of BMD algorithms: parameters inferred
     params=dlmread('params.txt');
     sigz_inf=params(:,1);
