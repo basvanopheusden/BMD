@@ -42,12 +42,14 @@ if BMD_vis
         t10{i}=textscan(tline_t10_no,'%f');
         
         tline_logpost=fgets(fid);
-        if length(str2num(tline_logpost(27:32)))>0
+        if length(tline_logpost)>=32 & length(str2num(tline_logpost(27:32)))>0
             logpost(i)=str2num(tline_logpost(9:14));
-        elseif length(str2num(tline_logpost(9:18)))>0
+        elseif length(tline_logpost)>=18 & length(str2num(tline_logpost(9:18)))>0
             logpost(i)=str2num(tline_logpost(9:18));
-        else
+        elseif length(tline_logpost)>=17 & length(str2num(tline_logpost(9:17)))>0
             logpost(i)=str2num(tline_logpost(9:17));
+        elseif length(tline_logpost)>=15 & length(str2num(tline_logpost(9:15)))>0
+            logpost(i)=str2num(tline_logpost(9:15));
         end
     end
     fclose(fid);
@@ -65,7 +67,7 @@ if BMD_vis
 elseif BMD_red_thresh_vis
     psname=['microsaccades_inferred_BMD_reduced_plus_threshold',num2str(i),'.pdf'];
     % load output of BMD algorithms: parameters inferred
-    params=dlmread('params.txt');
+    params=dlmread(['params',num2str(i),'.txt']);
     sigz_inf=params(:,1);
     sigx_inf=params(:,2);
     
