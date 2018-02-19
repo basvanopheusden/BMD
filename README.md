@@ -1,6 +1,10 @@
 
 # Bayesian microsaccade detection
 #### Implementation of the algorithm described in [Mihali, van Opheusden, and Ma, 2017, Journal of Vision](http://jov.arvojournals.org/article.aspx?articleid=2597868)
+
+## Applicability
+The BMD algorithm works best on fixational eye movement time series with inferred measurement noise of 0.01 deg or higher. Chances are high data that has been filtered online by the eye tracker will have substantially lower noise. With low noise, the discrepancy between the assumptions of the generative model and data tends to cause mistakes in the inference such as detecting multiple small microsaccades instead of one (Figure A7).
+
 ## Installation
 
 * To run this, you will have to make sure you have a C compiler installed on your computer. If not, install it.
