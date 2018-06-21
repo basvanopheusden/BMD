@@ -25,7 +25,7 @@ struct integraltable{
 };
 
 struct params{
-    double  lambda0=0.004, lambda1=0.1;
+    double  lambda0=0.004, lambda1=0.1; // parameters of the prior distributions (gamma) over durations
   long double d0=1.0;
   long double d1,sigma0,sigma1,sigmaz,sigmax;
   double const_term_up;
