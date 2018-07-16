@@ -37,17 +37,21 @@ Install [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/wi
   * `t01` indices in the time series for 0 (drift) to 1 (microsaccade) eye state transitions
   * `t10` indices in the time series for 1 to 0 eye state transitions
  
-* `params.txt` has the following parameters (columns). Each row represents the values across 6 iterations of the BMD algorithm. 
- * `sigmaz`
- * `sigmax`
- * `d0`
- * `sigma0`
- * `d1`
- * `sigma1`
+* `params.txt` has the following parameters (columns). Each row represents the values across N iterations of the BMD algorithm. 
+ * `sigmaz` (deg/ sqrt(ms))
+ * `sigmax` (deg)
+ * `d0` (unitless, fixed to 1)
+ * `sigma0`(deg/ms)
+ * `d1` (unitless)
+ * `sigma1` (deg/ms)
  
 The user might need `params.txt` when running the BMD algorithm on simulated data and checking parameter recovery. Also, the BMD variant BMD reduced plus threshold takes as input the inferred values for `sigmaz` and `sigmax`.
 
 * `output.txt`: logposterior values across iterations and estimated parameter values.
+
+## Additional assumptions
+
+BMD might need additional constraints in order to give reasonable inferences on particular datasets. Instead of allowing `sigma0` to take any value in between 0.0001 and 1 (function `estimate_sigma_down`), it can be constrained to [0.0001, 0.0013], which is plausible since this upper limit corresponds (see our parametrization of the generalized gamma distribution) to a drift velocity distribution with mean 1.5 deg/s (head fixed mean drift velocities are typically even lower). Inference might improve further by also also lowering the upper limit on `sigma1`, for instance to 0.1. The mean of the generalized gamma distribution for microsaccade velocity will be: $ sigma1 \dot 1000 \dot sqrt(2) \dot gamma((d1+2)/2)/gamma(d1+1)/2)$.
 
 ##  BMD variants and additional scripts 
 
