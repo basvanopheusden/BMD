@@ -51,7 +51,7 @@ The user might need `params.txt` when running the BMD algorithm on simulated dat
 
 ## Additional assumptions
 
-BMD might need additional constraints in order to give reasonable inferences on particular datasets. Instead of allowing `sigma0` to take any value in between 0.0001 and 1 (function `estimate_sigma_down`), it can be constrained to [0.0001, 0.0013], which is plausible since this upper limit corresponds (see our parametrization of the generalized gamma distribution) to a drift velocity distribution with mean 1.5 deg/s (head fixed mean drift velocities are typically even lower). Inference might improve further by also also lowering the upper limit on `sigma1`, for instance to 0.1. 
+BMD might need additional constraints in order to give reasonable inferences on particular datasets. Instead of allowing `sigma0` to take any value in between 0.0001 and 1 (function `estimate_sigma_down` in `bmd.cpp`), it can be constrained to [0.0001, 0.0013], which is plausible since this upper limit corresponds (see our parametrization of the generalized gamma distribution) to a drift velocity distribution with mean 1.5 deg/s (head fixed mean drift velocities are typically even lower). Inference might improve further by also also lowering the upper limit on `sigma1`, for instance to 0.1. 
 
 ##  BMD variants and additional scripts 
 
