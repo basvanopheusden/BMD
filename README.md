@@ -14,7 +14,7 @@ Install Xcode Command Line Tools by entering in Terminal: `xcode-select --instal
   * Windows: 
 Install [Windows SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) or [MinGW](http://www.mingw.org/wiki/howto_install_the_mingw_gcc_compiler_suite)
 
-* Install the [boost](http://www.boost.org/) C++ package.
+* Install the [boost](http://www.boost.org/) C++ package. If this step is troublesome, use the already compiled `bmd` executable available here.
 
 * Compile the `bmd.cpp` code into the `bmd` executable in the Command Prompt.
   * `g++  -std=c++11 -O3 -I$BOOST_INC  -fexpensive-optimizations -Wall -Wextra -o bmd bmd.cpp`
