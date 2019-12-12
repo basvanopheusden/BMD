@@ -3,6 +3,7 @@
 clear all; close all;
 
 for i = 1:5
+clear x;
 load(['x',num2str(i),'.mat'])
 % if time series length is much larger than 60000, it is safer to break it down into smaller pieces
 
