@@ -7,6 +7,9 @@ filter2_size=7; %size of the 2nd Kalman filter in BMD reduced + threshold
 
 plott=1;
 printt=1;
+post_process = 0; % duration threshold of at least 5 ms
+%and minimum time diff in between consecutive microsaccades of at least 50 ms
+% to avoid counting overshoot as a new microsaccade
 
 
 %load x file: eye position time series
@@ -80,6 +83,14 @@ t01inf=[]; %vector tau of transitions from 0 (drift) to 1 (microsaccades)
 t10inf=[]; %vector tau of transitions from 1 (microsaccades) to 0 (drift)
 t01inf=find([Cinf 0]==1 & [0 Cinf]==0);
 t10inf=find([Cinf 0]==0 & [0 Cinf]==1);
+
+if post_process
+    ind_post = t10inf(2:end)-t01inf(2:end)>=5 & t01inf(2:end)-t10inf(1:end-1)>50;
+    t01inf = t01inf(ind_post);
+    t10inf = t10inf(ind_post);
+    Cinf = tau_to_C(t01inf, t10inf,T);
+    Cm = Cinf;  % for visualization of the post-processed binarized output
+end
 
 Ninf=sum(Cinf); %no of 1's in the eye state time series C
 ninf=length(t01inf); %no of microsaccades
